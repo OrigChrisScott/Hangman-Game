@@ -1,2 +1,2 @@
 # Hangman-Game
-Themed Hangman Game for RATM Fans
+Themed Game of Hangman for RATM Fans

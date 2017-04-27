@@ -1,0 +1,58 @@
+
+#buttonRow {
+	margin-top: 20px;
+}
+
+#footerDiv {
+	background-color: #222;
+	color: #ccc;
+	height: 50px;
+	padding-top: 15px;
+}
+
+.wrapper {
+	display: block;
+	min-height: 1200px;
+	position: relative;
+	background-color: #000;
+	background-image: url("../images/background4.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.jumbotron {
+	opacity: .8;
+}
+
+/***not working*/
+#wordsImage {
+	opacity: 1;
+	z-index: 2;
+}
+
+#manLogo {
+	position: relative;
+	left: -70px;
+	top: 50px;
+}
+
+@media (max-width: 991px) {
+	
+	#buttonRow {
+		margin-top: 0px;
+	}
+
+	#wordGuess {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	#wordCharacters, #lettersGuessed {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+}

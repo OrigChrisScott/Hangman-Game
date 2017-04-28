@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+	<script   src="https://code.jquery.com/jquery-3.2.1.js"   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="   crossorigin="anonymous"></script>
+	<script type="text/javascript" src="game.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -30,14 +32,14 @@
 			<div class="jumbotron">
 				<div class="row">
 					<div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0" id="mainImage">
-						<img src="assets/images/placeholder.png" width="100%">
+						<img src="assets/images/baseImage.jpg" width="100%">
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1">
 						<div class="row" id="wordGuess">
-							<p>Test Column</p>
+							<!-- <p>Test Column</p> -->
 						</div>
 						<div class="row" id="wordCharacters">
-							<p>Test Column</p>
+							<!-- <p>Test Column</p> -->
 						</div>
 						<div class="row" id="lettersGuessed">
 							<p>Test Column</p>	
@@ -52,11 +54,11 @@
 			<div class="row text-center" id="buttonRow">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					
-					<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>&nbsp;&nbsp;New Game</button>
+					<button type="button" class="btn btn-success" id="newGameButton" onclick="rageMan()"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>&nbsp;&nbsp;New Game</button>
 					
-					<button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>&nbsp;&nbsp;Skip Word</button>
+					<button type="button" class="btn btn-warning" onclick="skipWord()"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>&nbsp;&nbsp;Skip Word</button>
 					
-					<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>&nbsp;&nbsp;About RATM</button>
+					<button type="button" class="btn btn-info" onclick="aboutThisWord()"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>&nbsp;&nbsp;About This Word</button>
 				</div>
 			</div>
 		</div>
@@ -69,7 +71,9 @@
 		</footer>
 
 	</div>
-
+	<script>
+		getWord();
+	</script>
 
 </body>
 </html>
